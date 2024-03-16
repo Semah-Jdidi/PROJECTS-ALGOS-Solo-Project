@@ -1,0 +1,246 @@
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+body{
+  background-color: #e5e5e5;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Container{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 2%;
+}
+
+.UserForm{
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 24em;
+  padding: 2em;
+  background-color: #c7b198;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 5px ;
+  font-weight: bold;
+}
+
+.UserForm label{
+  display: flex;
+  justify-content: space-between;
+}
+
+.UserForm input{
+  width: 15em;
+  height: 2em;
+  padding: 0 0.5em;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px ;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.FormBtn{
+  margin: 0 auto;
+  width: 10em;
+  padding: 1em;
+  font-size: 0.8em;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #58727f;
+  color: aliceblue;
+  cursor: pointer;
+
+}
+.FormBtn:hover{
+  background-color: #456a7c;
+}
+
+
+.NavBar{
+  display: flex;
+  padding: 0 1em;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black  ;
+  background-color: #757a7986;
+  color: #58727f;
+}
+
+.LogoutBtn{
+  width: 8em;
+  padding: 1em;
+  font-size: 0.8em;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #58727f;
+  color: aliceblue;
+  cursor: pointer;
+}
+.LogoutBtn:hover{
+  background-color: #456a7c;
+}
+
+.BookForm{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 18em;
+  padding: 2em;
+  background-color: #c7b198;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 5px ;
+  font-weight: bold;
+}
+
+.BookForm label{
+  display: flex;
+  justify-content: space-between;
+}
+
+.BookForm input{
+  width: 12em;
+  height: 2em;
+  padding: 0 0.5em;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px ;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.BookForm textarea{
+  width: 12em;
+  padding: 0.5em;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px ;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.BookContainer{
+  margin-top: 1em;
+  font-size: 1.5em;
+  background-color: #757a7986;
+  padding: 0em 4em;
+  box-shadow: 1px 1px 1px 5px ;
+  border-radius: 20px;
+}
+
+.BookContainer ul{
+  margin: 1em 0;
+  list-style: none;
+}
+
+.BookContainer ul li a {
+  color: #1c6358;
+}
+
+.BookDetailsContainer{
+  margin-top: 1em;
+  font-size: 1.5em;
+  background-color: #757a7986;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.BookDetailsContainer ul{
+  list-style:circle;
+}
+
+.BookDetailsForm{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.BookDetailsForm input{
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: 600;
+  font-style: normal;
+  width: 15em;
+  height: 2em;
+  font-size: 1em;
+  padding: 0.2em;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.BookDetailsForm label{
+  display: flex;
+  gap:1em
+}
+
+.BookDetailsForm textarea{
+  width: 12em;
+  padding: 0.5em;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.BtnHandler{
+  display: flex;
+  gap: 1em;
+}
+
+.UpdateBtn{
+  width: 6em;
+  padding: 1em;
+  font-size: 0.5em;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #58727f;
+  color: aliceblue;
+  cursor: pointer;
+}
+.UpdateBtn:hover{
+  background-color: #436a7e;
+}
+
+.DeleteBtn{
+  width: 6em;
+  padding: 1em;
+  font-size: 0.5em;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #fc3a52;
+  color: aliceblue;
+  cursor: pointer;
+}
+.DeleteBtn:hover{
+  background-color: #f81a34;
+}
+
+.HomeLink{
+  margin-top: 1em;
+  font-size: 1em;
+  color: #007bff;
+}
+.HomeLink:Hover{
+  color: #0056b3;
+}
+
+.Warning{
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+  color: red;
+}
