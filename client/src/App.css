@@ -195,6 +195,9 @@ body{
 }
 
 .BookDetailsForm textarea{
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: 600;
+  font-style: normal;
   width: 12em;
   padding: 0.5em;
   border: 2px solid black;
