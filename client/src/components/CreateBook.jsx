@@ -10,6 +10,7 @@ const CreateBook = props => {
 
   const {allBooks, setAllBooks} = props;
   const {user} = useUserContext();
+  const [errors, setErrors] = useState([]);
 
   const changeHandler = e => {
     setBook({...book, [e.target.name]: e.target.value});
@@ -24,7 +25,16 @@ const CreateBook = props => {
         setAllBooks([...allBooks, res.data])
         setBook({title:'', description:''})
       })
-      .catch(err => console.log(err))
+      .catch(err => {
+        const errorResponse = err.response.data.errors;
+        if(errorResponse){
+          const errorarr = [];
+          for (const key of Object.keys(errorResponse)) {
+            errorarr.push(errorResponse[key].message)
+          };
+          setErrors(errorarr);
+        }
+      })
   };
 
 
@@ -40,6 +50,13 @@ const CreateBook = props => {
           Description
           <textarea type="text" name='description' value={book.description} onChange={changeHandler} />
         </label>
+        {
+          errors.map((err, i) => {
+            return( 
+              <p className='Warning' key={i}>{err}</p>
+            )
+          })
+        }
         <button className='FormBtn'>Submit</button>
       </form>
     </div>

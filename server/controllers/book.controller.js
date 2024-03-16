@@ -6,17 +6,11 @@ module.exports = {
       const { title, description } = req.body;
       const createdBy = req.user.firstName
       const userId = req.user._id
-      const checkTitle = await Book.findOne({title})
-      if(checkTitle){
-        res.status(400).json({message: "This Title Already Exists!"})
-      }
-      else{
-        const newBook = await Book.create({title, description, createdBy, userId});
-        res.status(201).json(newBook);
-      }
+      const newBook = await Book.create({title, description, createdBy, userId});
+      res.status(201).json(newBook);
     } 
-    catch (err) {
-      res.status(400).json({error: err});
+    catch (error) {
+      res.status(400).json(error);
     }
   },
 

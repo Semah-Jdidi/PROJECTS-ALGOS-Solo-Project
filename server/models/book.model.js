@@ -10,7 +10,7 @@ const BookSchema = new mongoose.Schema({
   description: {
     type: String,
     required: [true, "Description is Required!"],
-    minLength: [2, "Book Description Must Be At Least 5 Characters!"]
+    minLength: [5, "Book Description Must Be At Least 5 Characters!"]
   },
   createdBy: {
     type: String,
